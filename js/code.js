@@ -1,4 +1,5 @@
 
+
 let idInterval;
 
 
@@ -45,7 +46,7 @@ const diggletImg=new Image();
 diggletImg.src="../imagenes/digglet.png";
 
 const pidgeotImg=new Image();
-pidgeotImg.src="../imagenes/megapidgeot.gif";
+pidgeotImg.src="../imagenes/megapidgeot.png";
 
 //IMAGE cloud
 
@@ -169,7 +170,7 @@ class Pidgeots {
 
 //SCORE AND HIGHSCORE
 
-function mostrarDatos(distancia,highScore,intervalPokemon){
+function mostrarDatos(distancia,highScore){
     ctx.fillStyle="black";
     ctx.font="64px Arial"
     
@@ -425,8 +426,8 @@ function iniciarJuego(){
             if(pokes.x <= pika.x + pika.w && pokes.x >=pika.x && pokes.y+50 >= pika.y - pika.h) { 
                 
                 //eliminar pidgeots
-                enemigosPokemon.splice(index,2);
-                enemigosPokemon2.splice(index,2);
+                enemigosPokemon.splice(0);
+                enemigosPokemon2.splice(index);
                 
                 if(distancia>highScore){
                     highScore=distancia;
