@@ -158,3 +158,14 @@ canvas{
     position: absolute;
     display:inline-block;
 }
+
+.start {
+    position: absolute;
+    top: 550px;
+    left: 675px;
+    width: 250px;
+    height: 90px;
+    background-color: transparent;
+    border-radius: 10%;
+  }
+
